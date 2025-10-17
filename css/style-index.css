@@ -1,11 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
     :root{
-        --color1: #7F8CAA;
-        --color2: #ED3F27;
+        --color1: #233D4D;
+        --color2: #FE7F2D;
         --buttonHover : #ee7060;
-        --color3: #B8CFCE;
-        --color4: #EAEFEF;
+        --color3: #000000;
+        --color4: #d6f0f0;
     }
 
     *{
@@ -100,7 +100,7 @@
     main .home .home-awalan .mask{
         position: relative;
         inset: 0;
-        background: var(--color3) ;
+        background: var(--color4) ;
         -webkit-mask-image: url(../img/awan.png);
         -webkit-mask-size: cover;
         -webkit-mask-repeat: no-repeat;
@@ -170,7 +170,7 @@
     }
 
     main .home .home-galeri{
-        background-color: var(--color3);
+        background: linear-gradient(to bottom, #d6f0f0,#233D4D);
         height: 100vh;
         width: 100%;
         z-index: 99;
@@ -184,12 +184,12 @@
     main .home .home-galeri:after{
         content: '';
         width: 100%;
-        background: linear-gradient(to bottom ,var(--color3), rgba(0,0,0,0.1));
+        background: linear-gradient(to bottom ,var(--color1), rgba(248, 248, 248, 0));
         position: absolute;
         z-index: 9;
         top:100vh;
         left: 0;
-        padding: 30px;
+        padding: 50px;
         box-sizing: border-box;
     }
 
@@ -282,7 +282,7 @@
         content: '';
         position: absolute;
         inset: 5px;
-        background-color: var(--color3);
+        background-color: var(--color1);
         border-radius: 20px;
         z-index: 1;
     }
@@ -294,7 +294,7 @@
     }
 
     main .home .home-galeri .jasa-layanan p{
-        color: black;
+        color: var(--color4);
         font-size: 1rem;
         text-align: start;
     }
@@ -336,7 +336,7 @@
         border: 2px solid var(--color1);
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
         z-index: 7;
-        gap: 3rem;
+        gap: 2rem;
         margin: auto 15px;
     }
 
@@ -392,10 +392,12 @@
 
     main .home .list-order .container-list .card-list .harga h1{
         color: var(--color2);
+        
     }
 
     main .home .list-order .container-list .card-list h1{
         color: var(--color1);
+        margin-top: 20px;
     }
 
     main .home .list-order .container-list .card-list .harga p{
@@ -470,7 +472,7 @@
 
     main footer .social-media {
         display: flex;
-        background-color: var(--color3);
+        background-color: var(--color1);
         padding: 15px;
         justify-content: center;
         text-align: center;
