@@ -16,7 +16,7 @@
     }
 
     body{
-        background:url(../img/background.png);
+        background:url(../img/doddle-orange.png);
         backdrop-filter: brightness(70%);
         height: 100vh;
         padding: 0;
@@ -392,7 +392,7 @@
 
     main .home .list-order .container-list .card-list .harga h1{
         color: var(--color2);
-        
+        margin-top: 0;
     }
 
     main .home .list-order .container-list .card-list h1{
