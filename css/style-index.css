@@ -664,7 +664,7 @@
         text-align: center;
         position: relative;
         text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
-        
+        animation: opacity 1s ease;
     }
     
     /* main .Galeri .container-img {
@@ -731,6 +731,7 @@
         justify-content: center;
         position: relative;
         margin-top: 2rem;
+        animation: masuk1 1s ease;
     }
 
     main .Galeri .container-img .cards-img{
@@ -804,7 +805,8 @@
     main .art-skill .info-skill .kata-pengantar h1{
         color:var(--color2);
         font-size: 4rem;
-        margin-top: 2rem;    
+        margin-top: 2rem;  
+        animation: opacity 1s ease;  
     }
 
     main .art-skill .info-skill .kata-pengantar p{
@@ -813,6 +815,8 @@
         width: 800px;
         text-align: center;
         margin-top: 5rem;
+        opacity: 0;
+        animation: opacity 1s ease .5s forwards;
     }
 
     main .art-skill .info-skill .kata-pengantar .btn-pengantar{
@@ -824,6 +828,7 @@
         font-size: 1.2rem;
         border-radius: 25px;
         margin: 0 12px;
+        animation: opacity 2.8s ease;
     }
 
     main .art-skill .info-skill .kata-pengantar .btn-pengantar .lihat-skill{
@@ -863,6 +868,7 @@
         margin-top: 18px;
         justify-content: center;
         position: relative;
+        animation: masuk1 1s ease;
     }
 
     main .art-skill .info-skill .skill-container::before{
@@ -886,7 +892,10 @@
         background-color: var(--color1);
         border-radius: 15px;
         z-index: 5;
+        transform: translateY(2rem);
+        opacity: 0;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+        animation: masuk1 1s ease 1s forwards;
     }
 
     main .art-skill .info-skill .skill-container .card-skill .image-skill{
@@ -1102,6 +1111,7 @@
         }
         100%{
             transform: translateY(0);
+            opacity: 1;
         }
     }
 
@@ -1194,3 +1204,17 @@
         }
     }
 
+    @keyframes opacity {
+        0%{
+            opacity: 0;
+            transform: scale(.1);
+        }
+        70%{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
