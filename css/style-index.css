@@ -868,10 +868,10 @@
     main .art-skill .info-skill .skill-container::before{
         content: '';
         display:flex;
-        background-color: var(--color1);
+        background:linear-gradient(to top, #233D4D,#FE7F2D);
         box-sizing: border-box;
         width: 100%;
-        padding: 10rem;
+        height: 100%;
         position: absolute;
         top: 5rem;
         border-top-left-radius: 50px;
@@ -885,7 +885,6 @@
         display: flex;
         background-color: var(--color1);
         border-radius: 15px;
-        padding: 5px;
         z-index: 5;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
     }
@@ -1027,12 +1026,23 @@
         color: var(--color4);
         font-weight: 600;
         align-items: end;
+        box-shadow: 0pc 5px 15px rgba(0, 0, 0, 0.3);
+        transition: .2s;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .lihat-skill:hover{
+        transform: translateY(5px);
+        box-shadow: none;
+        box-shadow: 0 0 15px var(--color2);
     }
 
     main .art-skill .info-skill .desc-skill{
         background-color:var(--color1);
         height: 100vh;
         padding: 0 2%;
+        border-bottom-left-radius:50px ;
+        border-bottom-right-radius:50px ;
+        border-bottom: 5px solid var(--color2);
     }
 
     main .art-skill .info-skill .desc-skill .judul{
@@ -1049,6 +1059,27 @@
     main .art-skill .info-skill .desc-skill .judul h1{
         color: var(--color2);
         font-size: 2.5rem;
+        text-decoration: underline;
+    }
+
+    main .art-skill .info-skill .desc-skill .keterangan-gambar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 3%;
+    }
+
+    main .art-skill .info-skill .desc-skill .keterangan-gambar img{
+        width: 500px;
+        object-fit: cover;
+        aspect-ratio: 1.1/1;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+    }
+
+    main .art-skill .info-skill .desc-skill .keterangan-gambar p{
+        color: var(--color4);
+        width: 600px;
+        margin-top: 5rem;
+        font-size: 1.7rem;
     }
 
 
