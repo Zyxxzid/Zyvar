@@ -794,8 +794,66 @@
         position: relative; 
     }
 
+    main .art-skill .info-skill .kata-pengantar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+
+    main .art-skill .info-skill .kata-pengantar h1{
+        color:var(--color2);
+        font-size: 4rem;
+        margin-top: 2rem;    
+    }
+
+    main .art-skill .info-skill .kata-pengantar p{
+        color: var(--color4);
+        font-size: 1.8rem;
+        width: 800px;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar{
+        margin-top:26px;
+    }
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar button{
+        padding: 8px 12px;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        margin: 0 12px;
+    }
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar .lihat-skill{
+        background-color: var(--color2);
+        border: none;
+        color: var(--color3);
+        transition: .5s;
+    }
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar .lihat-skill:hover{
+        background-color: var(--color2);
+        color: var(--color4);
+        transform: translateY(-4px);
+    }
+    
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar .order{
+        background: none;
+        border: 2px solid var(--color2);
+        color: var(--color2);
+        transition: .5s;
+    }
+
+    main .art-skill .info-skill .kata-pengantar .btn-pengantar .order:hover{
+        background-color: var(--color2);
+        color: var(--color4);
+        transform: translateY(-4px);
+    }
+
     main .art-skill .info-skill .skill-container{
-        overflow: hidden;
         display: flex;
         width: 100%;
         box-sizing: border-box;
@@ -803,12 +861,33 @@
         gap: 2rem;
         align-items: center;
         margin-top: 18px;
+        justify-content: center;
+        position: relative;
+    }
+
+    main .art-skill .info-skill .skill-container::before{
+        content: '';
+        display:flex;
+        background-color: var(--color1);
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10rem;
+        position: absolute;
+        top: 5rem;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        z-index: 1; 
+        margin: 0;
+        border-top: 5px solid var(--color2);
     }
 
     main .art-skill .info-skill .skill-container .card-skill{
         display: flex;
         background-color: var(--color1);
         border-radius: 15px;
+        padding: 5px;
+        z-index: 5;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
     }
 
     main .art-skill .info-skill .skill-container .card-skill .image-skill{
@@ -819,31 +898,158 @@
     
     main .art-skill .info-skill .skill-container .card-skill .image-skill .img-skill{
         position:relative;
-        box-sizing:border-box
+        box-sizing:border-box;
+        overflow: hidden;
     }
     
     main .art-skill .info-skill .skill-container .card-skill .image-skill .img-skill img{
         overflow: hidden;
         width: 300px;
         object-fit: cover;
-        aspect-ratio: 1/1;
+        aspect-ratio: 1.5/1;
         z-index: 1;
+        box-sizing: border-box;
+        transition: .3s;
+        position: relative;
+        filter: brightness(75%);
     }
-
+    
     main .art-skill .info-skill .skill-container .card-skill .image-skill .img-skill p{
-        color: var(--color4);
+        color: var(--color2);
+        top: 20rem;
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
         text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
         align-items:center ;
         margin: 0;
         display: flex;
         justify-content: center;
-        z-index: -1;
+        z-index: 1;
+        transition: .4s;
     }
 
+    main .art-skill .info-skill .skill-container .card-skill .image-skill .img-skill:hover img{
+        transform: scale(1.1);
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .image-skill .img-skill:hover p{
+        z-index: 3;
+        top: 0;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .bagian-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .bagian-logo .logo{
+        width: 80px;
+        margin:0;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .bagian-logo .paragraf-informasi-skill{
+        gap: .5rem;
+        display: flex;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .bagian-logo .paragraf-informasi-skill p{
+        background-color: var(--color1);
+        padding: 5px 8px;
+        border-radius: 12px;
+        font-size: .8rem;
+        color:var(--color2);
+        border: 1px solid var(--color2);
+        font-weight: 600;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill h2{
+        color: var(--color2);
+        font-size: 2rem;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .ket-skill{
+        width: 260px;
+        margin: 12px 0;
+        color: var(--color4);
+        font-size: .8rem;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill details{
+        color: var(--color2);
+        margin: 12px 0;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .harga{
+        display:flex;
+        font-size:.7rem ;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .harga p{
+        color: var(--color4);
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .harga p:nth-child(1){
+        text-decoration: line-through;
+        text-decoration-color:var(--color4) ;
+        color: var(--color2);
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .harga span{
+        color: var(--color2);
+    }
+
+    main .art-skill .info-skill .skill-container .card-skill .info-skill .group-bawah .lihat-skill{
+        padding:5px 15px;
+        border-radius:12px;
+        background-color: var(--color2);
+        width: 100px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        color: var(--color4);
+        font-weight: 600;
+        align-items: end;
+    }
+
+    main .art-skill .info-skill .desc-skill{
+        background-color:var(--color1);
+        height: 100vh;
+        padding: 0 2%;
+    }
+
+    main .art-skill .info-skill .desc-skill .judul{
+        display:flex;
+        gap:1.5rem;
+        margin-top:20vh;
+        align-items: center;
+    }
+
+    main .art-skill .info-skill .desc-skill .judul img{
+        width:80px;
+    }
+
+    main .art-skill .info-skill .desc-skill .judul h1{
+        color: var(--color2);
+        font-size: 2.5rem;
+    }
 
 
     /* animasi */
