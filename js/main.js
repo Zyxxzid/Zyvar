@@ -55,12 +55,20 @@ window.addEventListener('scroll', () => {
 
 const tombolNav = document.querySelectorAll('nav .nav-menu a')
 const sections = document.querySelectorAll('main section')
+const links = document.querySelectorAll('.links a')
 
 tombolNav.forEach((tombol, click) =>{
     tombol.addEventListener('click', function () {
         sections.forEach(sec => sec.classList.remove('halaman-main'))
         sections[click].classList.toggle('halaman-main')
     })
+})
+
+links.forEach((link, click) => {
+  link.addEventListener('click', function () {
+    sections.forEach(sec => sec.classList.remove('halaman-main'))
+    sections[click].classList.toggle('halaman-main')
+  })
 })
 
 
